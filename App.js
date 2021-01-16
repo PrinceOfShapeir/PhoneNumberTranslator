@@ -1,12 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+//import {Image} from 'react-native-elements';
+import NumberInput from './components/NumberInput';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+        <Text>
+          Got a phone number in alphabetic format? Type it here to translate it into a real number.
+        </Text>
+
+        <Image
+          source={require('./assets/favicon.png')}></Image>
+
+        <NumberInput />
+
     </View>
   );
 }
